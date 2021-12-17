@@ -1,0 +1,34 @@
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.border-right {
+  border-right: 1px solid rgb(144, 142, 142);
+}
+.justify {
+  text-align: justify;
+}
+.the-card {
+  background: lightblue;
+  border-radius: 2px;
+  text-align: center;
+  height: 200px;
+}
+.box-icon {
+  padding-top: 75px;
+}
+img {
+  border-radius: 4px;
+}
+.footer {
+  background: #fafafa;
+}
+.footer {
+  background: #fafafa;
+}
+.footer hr {
+  border: 1px solid #e3e3e3;
+}
+img {
+  border-radius: 10px;
+}

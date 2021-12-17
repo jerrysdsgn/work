@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GSA - Freelance Web Developer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="icon" type="image/x-icon" href="/img/fav.png">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/about.css">
+    <script src="https://use.fontawesome.com/cf546031f8.js"></script>
+
+</head>
+
+<body onload="countdown()">
+    <!-- Nav -->
+    <div class="wrapper">
+
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+              <img src="img/n-logo.svg" width="112" height="28">
+            </a>
+        
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+        
+          <div id="navbarBasicExample" class="navbar-menu">
+
+              
+            <div class="navbar-start">
+
+            </div>
+        
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a href="about.html" class="button is-light">
+                    <strong>About</strong>
+                  </a>
+                  <a id="cntct" class="button is-info">
+                      <strong>Contacto</strong>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </nav>
+
+  </div>
+
+
+    <div class="section is-medium">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column">
+                    <div class="notification is-primary">
+                        <h1 class="title is-3">Formulario enviado exitosamente</h1>
+                        <h4 class="subtitle is-4">Redirigiendo a página de inicio: <span id="counter"></span></h4>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container">
+          <div class="columns is-vcentered">
+              <div class="column is-5">
+                  <h2 class="title is-4">Interested in building on the web?</h2>
+                  <p>Feel free to get in touch with me</p>
+                  <br />
+                  <button id="modl" class="button">Let's talk!</button>
+              </div>
+          </div>
+          <hr>
+      <!----
+          <div class="columns is-vcentered">
+              <div class="column is-5">
+                  <p>Last edited Dec-2021</p>
+              </div>
+              <div class="column is-6 has-text-right">
+                  <h2 class="title is-4">Socials</h2>
+                  <p>Dribbble & IG</p>
+              </div>
+              <div class="column"></div>
+          </div>
+      -->
+      </div>
+  </footer>
+  <script>
+    function countdown(){
+        var timeleft = 4;
+        var downloadTimer = setInterval(function(){
+        if(timeleft <= 0){
+            clearInterval(downloadTimer);
+        }
+        document.getElementById("counter").innerHTML = timeleft;
+        timeleft -= 1;
+        }, 1000);
+
+        setTimeout("location.href = './index.html';",5000);
+    }
+</script>
+</body>
+
+</html>

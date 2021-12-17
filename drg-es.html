@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <style>
+        img{
+            border-radius: 10px;
+        }
+        .main-banner{
+            background-image: url('./lps_img/banner_2.png');
+            background-size: cover;
+        }
+        .border-right{
+            border-right: 1px solid rgb(144, 142, 142);
+        }
+        .justify{
+            text-align: justify;
+        }
+        .the-card{
+            background: lightblue;
+            border-radius: 2px;
+            text-align: center;
+            height: 200px;
+        }
+        .box-icon{
+            padding-top: 75px;
+        }
+        .wrapper{
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width:760px){
+            .showcase-img {
+                height: auto;
+                max-width: 100%;
+            }
+        }
+
+        @media screen and (min-width:760px){
+            .showcase-img {
+                height: auto;
+                max-width: 800px;
+            }
+        }
+
+        .showcase-img {
+            height: auto;
+            max-width: 800px;
+        }
+    </style>
+  </head>
+  <body>
+
+    <div class="wrapper">
+
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="index.html">
+                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+              </a>
+          
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+
+                
+              <div class="navbar-start">
+
+              </div>
+          
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="buttons">
+                    <a href="about.html" class="button is-light">
+                      <strong>About</strong>
+                    </a>
+                    <a id="cntct" class="button is-primary">
+                        <strong>Contacto</strong>
+                      </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </nav>
+
+    </div>
+
+
+    <section class="hero main-banner is-medium is-link">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column">
+                        <h1 class="title is-1">
+                            Turning professionals to consultants
+                        </h1>
+                    </div>
+                    <div class="column"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrapper">
+        <section class="hero is-medium">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns is-vcentered">
+                        <div class="column is-5">
+                            <h2 class="subtitle is-3 is-uppercase">
+                                Intro
+                            </h2>
+                            <p class="justify">David Ramírez Gutiérrez es un profesional con una trayectoria de +30 años como consultor. En los últimos años se ha dedicado a la docencia y el mentoring a empresarios y emprendedores.</p>
+                        </div>
+                        <div class="column has-text-centered is-offset-1">
+                            <div class="columns">
+                                <div class="column border-right is-uppercase">
+                                    <ion-icon name="contrast-outline"></ion-icon>
+                                    <br />
+                                    <br />
+                                    <h5 class="subtitle is-6">Uno</h5>
+                                </div>
+                                <div class="column border-right is-uppercase">
+                                    <ion-icon name="contrast-outline"></ion-icon>
+                                    <br />
+                                    <br />
+                                    <h5 class="subtitle is-6">Segundo</h5>
+                                </div>
+                                <div class="column is-uppercase">
+                                    <ion-icon name="contrast-outline"></ion-icon>
+                                    <br />
+                                    <br />
+                                    <h5 class="subtitle is-6">Tercero</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+        <section class="hero is-medium">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns is-vcentered">
+                        <div class="column">
+                            <h4 class="subtitle is-3 is-uppercase">Fase exploratiria</h4>
+                            <p class="justify">A mediados de 2019 DRG lanzó su más reciente proyecto; DEXAC. Un curso que ayuda a profesionistas a realizar la transición de expertos a profesionales que ejecen la consultoría.</p>
+                            <br />
+                            <p>Al ser un proyecto nuevo el reto ha sido asegurar la tracción e interacción con el público para generar un pipeline que nos permita adquirir un flujo constante al curso.</p>
+                        </div>
+                        <div class="column is-offset-1">
+                            <figure class="image is-3by2">
+                                <img src="https://bulma.io/images/placeholders/256x256.png">
+                            </figure>
+                            <span>The desc of img</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+        <section class="hero is-medium">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns is-vcentered">
+                        <div class="column">
+                            <figure class="image is-3by2">
+                                <img src="https://bulma.io/images/placeholders/256x256.png">
+                            </figure>
+                            <span>The desc of img</span>
+                        </div>
+                        <div class="column is-offset-1">
+                            <h4 class="subtitle is-3 is-uppercase">Causar un impacto</h4>
+                            <p class="justify">El objetivo ha sido aumentar el alcance del proyecto (Awareness) para que 
+    
+                                1. Podamos incrementar las métricas de interacción con la audiencia. 
+                                
+                                2. Generar un mayor número de conversiones</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+        <section class="hero is-medium">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns is-vcentered">
+                        <div class="column">
+                            <h4 class="subtitle is-3 is-uppercase">Fase exploratiria</h4>
+                            <p class="justify">A mediados de 2019 DRG lanzó su más reciente proyecto; DEXAC. Un curso que ayuda a profesionistas a realizar la transición de expertos a profesionales de la consultoría.</p>
+                            <p>Al ser un proyecto nuevo el reto ha sido asegurar la tracción e interacción con el público para generar un pipeline que nos permita adquirir un flujo constante al curso.</p>
+                        </div>
+                        <div class="column is-offset-1">
+                            <figure class="image is-3by2">
+                                <img src="https://bulma.io/images/placeholders/256x256.png">
+                            </figure>
+                            <span>The desc of img</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+        <section class="hero is-medium">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns is-vcentered">
+                        <div class="column">
+                            <figure class="image">
+                                <img src="./drg_img/DRG-funnel.png">
+                            </figure>
+                            <span>The desc of img</span>
+                        </div>
+                        <div class="column is-offset-1">
+                            <h4 class="subtitle is-3 is-uppercase">Generación y gestión de un funnel</h4>
+                            <p class="justify">Presencia en línea<br />
+                                Landing de registro al curso (automatización de invitación vía mailing)<br />
+                                Videos
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+    
+        <section class="hero is-medium">
+            <div class="hero-body">
+                <div class="container">
+                    <h4 class="subtitle is-3 is-uppercase">Conoce más de Le Paysage</h4>
+                    <hr>
+                    <div class="columns is-vcentered">
+                        <div class="column">
+                            <div class="img-card">
+                                <img class="showcase-img" src="./drg_img/DRG_showcase.png">
+                                <div class="image-overlay" onclick="openModal();currentSlide(1)">
+                                    <div class="image-title">Home</div>
+                                    <!--<p class="image-description">The description</p>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="img-card">
+                                <img class="showcase-img" src="./drg_img/timeline.png">
+                                <div class="image-overlay" onclick="openModal();currentSlide(2)">
+                                    <div class="image-title">Trayectoria</div>
+                                    <!--<p class="image-description">The description</p>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="img-card">
+                                <img class="showcase-img" src="./drg_img/dexac_landing.png">
+                                <div class="image-overlay" onclick="openModal();currentSlide(3)">
+                                    <div class="image-title">Landing DEXAC</div>
+                                    <!--<p class="image-description">The description</p>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns is-vcentered">
+                        <div class="column">
+                            <div class="img-card">
+                                <img class="showcase-img" src="./drg_img/DRG-funnel.png">
+                                <div class="image-overlay" onclick="openModal();currentSlide(4)">
+                                    <div class="image-title">Strategy</div>
+                                    <!--<p class="image-description">The description</p>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="img-card">
+                                <img class="showcase-img" src="./drg_img/video-dexac.png">
+                                <div class="image-overlay" onclick="openModal();currentSlide(5)">
+                                    <div class="image-title">Video promocional</div>
+                                    <!--<p class="image-description">The description</p>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="img-card">
+                                <img class="showcase-img" src="./drg_img/video-dexac-2.png">
+                                <div class="image-overlay" onclick="openModal();currentSlide(6)">
+                                    <div class="image-title">Video promocional</div>
+                                    <!--<p class="image-description">The description</p>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="section">
+                <div class="container is-fluid">
+    
+                    <div class="modal-gallery" id="myModal">
+                        <div class="modal-content is-vcentered">
+                          <div class="item-slide">
+                            <img class="showcase-img" src="./drg_img/DRG_showcase.png">
+                            <span class="caption-txt">Nombre de foto</span>
+                          </div>
+                          <div class="item-slide">
+                            <img class="showcase-img" src="./drg_img/timeline.png">
+                            <span class="caption-txt">Nombre de foto</span>
+                          </div>
+                          <div class="item-slide">
+                            <img class="showcase-img" src="./drg_img/dexac_landing.png">
+                            <span class="caption-txt">Nombre de foto</span>
+                          </div>
+                          <div class="item-slide">
+                            <img class="showcase-img" src="./drg_img/DRG-funnel.png">
+                            <span class="caption-txt">Nombre de foto</span>
+                          </div>
+                          <div class="item-slide">
+                            <img class="showcase-img" src="./drg_img/video-dexac.png">
+                            <span class="caption-txt">Nombre de foto</span>
+                          </div>
+                          <div class="item-slide">
+                            <img class="showcase-img" src="./drg_img/video-dexac-2.png">
+                            <span class="caption-txt">Nombre de foto</span>
+                          </div>
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                      <button onclick="closeModal()" class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    
+                </div>
+            </section>
+        </section>
+    
+    
+    
+    
+        <section class="hero is-medium">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns is-vcentered">
+                        <div class="column">
+                            <figure class="image is-4by5">
+                                <img src="https://bulma.io/images/placeholders/256x256.png">
+                            </figure>
+                            <span>The desc of img</span>
+                        </div>
+                        <div class="column is-offset-1">
+                            <h4 class="subtitle is-4 is-uppercase" style="margin-bottom: .8rem;">The most effective format</h4>
+                            <p class="justify">Throughtout this project we found that a video presentation of the course resulted in much greater engagement in comparison with the previously used methods: Print media, direct sales.</p>
+                            <br />
+                            <br />
+                            <br />
+                            <h4 class="subtitle is-4 is-uppercase" style="margin-bottom: .8rem;">Time and frecquency</h4>
+                            <p class="justify">Once we defined the importace of organic video promotion, the two main variables that came into play where time (prior to the launch of the course) and frecquency (the amount of times the course was promoted through videos).</p>
+                            <br />
+                            <p class="justify">We adjusted to a larger timeframe before the course was launched. We intended to have 2 Presentation/AMA Zoom calls with potential paticipants instead of the 1 call we made for the 2nd edition of the course.</p>
+                            <br />
+                            <p>Final result: For the third edition of the course we saw a 2x increase in conversions in comparison to the 2nd edition of the course.</p>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    </section>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-5">
+                    <h2 class="title is-4">Interested in creating a project?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aspernatur officia quia excepturi. Officiis ullam dolores aperiam</p>
+                    <br />
+                    <button class="button">The btn</button>
+                </div>
+            </div>
+            <hr>
+            <div class="columns is-vcentered">
+                <div class="column is-5">
+                    <p>Copyright&copy;</p>
+                </div>
+                <div class="column is-6 has-text-right">
+                    <h2 class="title is-4">Socials</h2>
+                    <p>Dribbble & IG</p>
+                </div>
+                <div class="column"></div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/gallery.js"></script>
+  </body>
+</html>
