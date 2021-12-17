@@ -1,0 +1,16 @@
+.main-home-title {
+  font-size: 35px;
+}
+.panel {
+  padding: 20px;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+strong {
+  font-size: 1em;
+}
+ul li {
+  list-style-type: circle;
+}

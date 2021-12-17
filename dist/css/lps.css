@@ -1,0 +1,59 @@
+img {
+  border-radius: 10px;
+}
+.main-banner {
+  background-image: url("../lps_img/banner_2.png");
+  background-size: cover;
+}
+.hero .title {
+  color: white !important;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.border-right {
+  border-right: 1px solid rgb(144, 142, 142);
+}
+.justify {
+  text-align: justify;
+}
+.the-card {
+  background: #456475;
+  border-radius: 2px;
+  text-align: center;
+  height: 130px;
+  border-radius: 9px;
+  color: white;
+}
+.box-icon {
+  padding-top: 20px;
+}
+.overlay {
+  background: black;
+  height: auto;
+  width: 100%;
+}
+.the-card p {
+  padding: 15px;
+  font-size: 0.75em;
+}
+
+@media screen and (max-width: 760px) {
+  .showcase-img {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .showcase-img {
+    height: auto;
+    max-width: 800px;
+  }
+}
+
+.showcase-img {
+  height: auto;
+  max-width: 800px;
+}

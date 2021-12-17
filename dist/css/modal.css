@@ -1,0 +1,43 @@
+.visible {
+  display: block;
+}
+
+.modal-card {
+  background: #ffffff;
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 2%;
+}
+
+.modal-card-head {
+  border-bottom: none;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background: black;
+}
+
+.modal-card-title {
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.4s;
+  padding: 20px 50px;
+  background: white !important;
+}
+
+@media screen and (max-width: 769px) {
+  .sticky {
+    /*width: 90%;*/
+    display: block;
+    width: 100vw;
+    padding: 20px 0;
+  }
+}

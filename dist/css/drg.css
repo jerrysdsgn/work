@@ -1,0 +1,45 @@
+img {
+  border-radius: 10px;
+}
+.main-banner {
+  background-image: url("../drg_img/banner_drg.png");
+  background-size: cover;
+}
+.border-right {
+  border-right: 1px solid rgb(144, 142, 142);
+}
+.justify {
+  text-align: justify;
+}
+.the-card {
+  background: lightblue;
+  border-radius: 2px;
+  text-align: center;
+  height: 200px;
+}
+.box-icon {
+  padding-top: 75px;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 760px) {
+  .showcase-img {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .showcase-img {
+    height: auto;
+    max-width: 800px;
+  }
+}
+
+.showcase-img {
+  height: auto;
+  max-width: 800px;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GSA - About</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="icon" type="image/x-icon" href="/img/fav.png">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/about.css">
+    <script src="https://use.fontawesome.com/cf546031f8.js"></script>
+
+</head>
+
+<body>
+    <!-- Nav -->
+    <div class="wrapper">
+
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+              <img src="img/n-logo.svg" width="112" height="28">
+            </a>
+        
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+        
+          <div id="navbarBasicExample" class="navbar-menu">
+
+              
+            <div class="navbar-start">
+
+            </div>
+        
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a href="about.html" class="button is-light">
+                    <strong>About</strong>
+                  </a>
+                  <a id="cntct" class="button is-info">
+                      <strong>Contacto</strong>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </nav>
+
+  </div>
+
+
+    <div class="section is-medium">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-6">
+                    <h1 class="main-home-title title">
+                        Gerardo S.
+                    </h1>
+                    <p class="body-text">Im a marketer based in Mexico City.</p>
+                    <br />
+                    <p>I focus on leaveraging web development and digital marketing to provide business solutions.</p>
+                    <br />
+                    <p>Driven by curiosity, I find that there is always more to learn and something to build. Im passionate about taking ideas from concept to reality, and have a deep interest in developing strategies to see my projects thrive.</p>
+                    <br />
+                    <div class="panel">
+                        <p class="body-text"><ion-icon name="reader-outline"></ion-icon>&nbsp;More info: <a href="cv.html">CV</a></p>
+                    </div>
+                    <br>
+                    <strong>Other Interests:</strong>
+                    <ul>
+                        <li> Calisthenics</li>
+                        <li> Blockchain & Crypto</li>
+                        <li> Premier League</li>
+                        <li> F1</li>
+                    </ul>
+                    <br />
+                </div>
+                <div class="column is-offset-2">
+                    <figure class="image is-1by1">
+                        <img class="is-rounded" src="img/Dribbble.png" alt="Description">
+                    </figure>
+                </div>
+                <div class="column is-1"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container">
+          <div class="columns is-vcentered">
+              <div class="column is-5">
+                  <h2 class="title is-4">Interested in building on the web?</h2>
+                  <p>Feel free to get in touch with me</p>
+                  <br />
+                  <button id="modl" class="button">Let's talk!</button>
+              </div>
+          </div>
+          <hr>
+      <!----
+          <div class="columns is-vcentered">
+              <div class="column is-5">
+                  <p>Last edited Dec-2021</p>
+              </div>
+              <div class="column is-6 has-text-right">
+                  <h2 class="title is-4">Socials</h2>
+                  <p>Dribbble & IG</p>
+              </div>
+              <div class="column"></div>
+          </div>
+      -->
+      </div>
+  </footer>
+
+    <!--MODAL-->
+    <div id="modalContent" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Modal title</p>
+          <button class="delete close-btn"></button>
+        </header>
+
+        <section class="modal-card-body">
+
+          <form onsubmit="redirect()" method="post" action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSeQjr2DKOFJOiiKUXHlqOXEL3uAU4svYII630ny49NPc4rA3w/formResponse" target="hidden_iframe">
+              <div class="field">
+                  <label class="label">Name</label>
+                  <div class="control">
+                    <input id="fna" class="input" name="entry.1786396768" type="text" placeholder="Text input">
+                  </div>
+                </div>
+                
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input id="fem" class="input" name="entry.976551282"  type="text" placeholder="Email input">
+                    <p class="is-danger help" id="emailVerif"></p>
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-envelope"></i>
+                    </span>
+                  </div>
+                  <p class="help is-danger"></p>
+                </div>
+                
+                <div class="field">
+                  <label class="label">Message</label>
+                  <div class="control">
+                    <textarea id="frmMsg" class="textarea" name="entry.1612525778"  placeholder="Textarea"></textarea>
+                  </div>
+                </div>
+                
+                <div class="field is-grouped">
+                  <div class="control">
+                    <button onclick="valid()" id="formBtn" type="submit" class="button is-info">Submit</button>
+                  </div>
+                </div>
+          </form>
+
+        </section>
+
+      </div>
+  </div>
+
+    <script src="js/modal.js"></script>
+</body>
+
+</html>
