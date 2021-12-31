@@ -1,5 +1,9 @@
 body {
-  font-family: "Cardo", serif;
+  font-family: sans-serif;
+}
+
+a {
+  font-family: sans-serif;
 }
 
 h1,
