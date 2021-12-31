@@ -1,5 +1,19 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css");
 
+body {
+  font-family: "Cardo", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
 .item-slide {
   box-sizing: border-box;
 }
