@@ -1,5 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: sans-serif;
+}
+
+.spacer {
+  margin-top: 140px;
 }
 
 a {
@@ -19,6 +27,12 @@ h6 {
 .wrapper {
   width: 90%;
   margin: 0 auto;
+}
+.web-dev-img {
+  height: 250px !important;
+}
+.list-icon {
+  font-size: 22px;
 }
 .border-right {
   border-right: 1px solid rgb(144, 142, 142);
@@ -49,4 +63,23 @@ img {
 }
 img {
   border-radius: 10px;
+}
+
+@media screen and (max-width: 760px) {
+  .showcase-img {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .showcase-img {
+    height: auto;
+    max-width: 800px;
+  }
+}
+
+.showcase-img {
+  height: auto;
+  max-width: 800px;
 }
