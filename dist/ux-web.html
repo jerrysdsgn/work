@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GSA - UX | Web Development</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="/img/fav.png" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald"
+      rel="stylesheet"
+    />
+    <script src="https://use.fontawesome.com/cf546031f8.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="index.html">
+            <img src="img/n-logo.svg" width="112" height="28" />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start"></div>
+
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a href="about.html" class="button is-light">
+                  <strong>About</strong>
+                </a>
+                <a id="cntct" class="button is-black">
+                  <strong>Contact</strong>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="container">
+      <ul>
+        <li><ion-icon class="list-icon" name="color-filter-outline"></ion-icon></ion-icon>&nbsp;&nbsp;<a href="#uxui">UX | UI Design</a></li>
+        <li><ion-icon class="list-icon" name="code-slash-outline"></ion-icon>&nbsp;&nbsp;<a href="#webD">Web development</a></li>
+      </ul>
+    </div>
+
+    <section class="wrapper">
+      <section class="hero">
+        <div class="hero-body">
+          <div class="container">
+            <div class="columns is-vcentered">
+              <div class="column">
+                <h5 class="subtitle is-5 is-uppercase">UX | UI Design</h5>
+                <h1 class="title is-1">
+                  Crafting the customer journey
+                </h1>
+                <br />
+                <h5 class="subtitle is-6 is-uppercase">Workflow:</h5>
+                <p>
+                  <strong
+                    ><ion-icon
+                      class="list-icon"
+                      name="git-pull-request-outline"
+                    ></ion-icon
+                    >&nbsp;&nbsp;UX: </strong
+                  >Research insights on the target audience;
+                  <i>
+                    who are they? What are their pain points? How can the
+                    platform provide a solution?</i
+                  >
+                  <br />
+                  From there, its all about defining a user journey + optimal
+                  interactions.
+                  <br />
+                  <br />
+                </p>
+
+                <p>
+                  <strong
+                    ><ion-icon class="list-icon" name="brush-outline"></ion-icon
+                    >&nbsp;&nbsp;UI:
+                  </strong>
+                  Sitemap and wireframe design.
+                </p>
+                <br />
+                <p>
+                  <strong
+                    ><ion-icon
+                      class="list-icon"
+                      name="construct-outline"
+                    ></ion-icon
+                    >&nbsp;&nbsp;Implementation:
+                  </strong>
+                  Take the project from the planning stages to production by
+                  creating mockups and functional prototypes.
+                </p>
+                <br />
+              </div>
+              <div class="column is-offset-1">
+                <figure class="image is-3by1">
+                  <img src="./img/lowFidelity.png" />
+                </figure>
+                <br />
+                <p>Low fidelity prototyping</p>
+                <br />
+                <figure class="image is-3by1">
+                  <img src="./img/highFidelity.png" />
+                </figure>
+                <br />
+                <p>High fidelity prototyping</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="uxui" class="wrapper">
+      <section class="hero is-medium">
+        <div style="padding-bottom: 0" class="hero-body">
+          <div class="container">
+            <h4 class="subtitle is-3 is-uppercase">UX | UI Showcase</h4>
+            <hr />
+            <div class="columns is-vcentered">
+              <div class="column">
+                <div class="img-card">
+                  <img class="showcase-img" src="./img/Design SystemD.png" />
+                  <div
+                    class="image-overlay"
+                    onclick="openModal();currentSlide(1)"
+                  >
+                    <div class="image-title">Design System</div>
+                    <!--<p class="image-description">The description</p>-->
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="img-card">
+                  <img class="showcase-img" src="./img/app.png" />
+                  <div
+                    class="image-overlay"
+                    onclick="openModal();currentSlide(2)"
+                  >
+                    <div class="image-title">Skincare app prototype</div>
+                    <!--<p class="image-description">The description</p>-->
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="img-card">
+                  <img class="showcase-img" src="./img/Portfolio.png" />
+                  <div
+                    class="image-overlay"
+                    onclick="openModal();currentSlide(3)"
+                  >
+                    <div class="image-title">Portfolio prototype</div>
+                    <!--<p class="image-description">The description</p>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="columns is-vcentered">
+              <div class="column">
+                <div class="img-card">
+                  <img class="showcase-img" src="./img/fitness.png" />
+                  <div
+                    class="image-overlay"
+                    onclick="openModal();currentSlide(4)"
+                  >
+                    <div class="image-title">Fitness app prototype</div>
+                    <!--<p class="image-description">The description</p>-->
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="img-card">
+                  <img class="showcase-img" src="./img/saas.png" />
+                  <div
+                    class="image-overlay"
+                    onclick="openModal();currentSlide(5)"
+                  >
+                    <div class="image-title">Saas prototype</div>
+                    <!--<p class="image-description">The description</p>-->
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="img-card">
+                  <img class="showcase-img" src="./img/BWB.png" />
+                  <div
+                    class="image-overlay"
+                    onclick="openModal();currentSlide(6)"
+                  >
+                    <div class="image-title">Landing page prototype</div>
+                    <!--<p class="image-description">The description</p>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="section">
+          <div class="container is-fluid">
+            <div class="modal-gallery" id="myModal">
+              <div class="modal-content is-vcentered">
+                <div class="item-slide">
+                  <img class="showcase-img" src="./img/Design SystemD.png" />
+                  <span class="caption-txt">Design System</span>
+                </div>
+                <div class="item-slide">
+                  <img class="showcase-img" src="./img/app.png" />
+                  <span class="caption-txt">App prototype</span>
+                </div>
+                <div class="item-slide">
+                  <img class="showcase-img" src="./img/Portfolio.png" />
+                  <span class="caption-txt">Portfolio prototype</span>
+                </div>
+                <div class="item-slide">
+                  <img class="showcase-img" src="./img/fitness.png" />
+                  <span class="caption-txt">Fitness app prototype</span>
+                </div>
+                <div class="item-slide">
+                  <img class="showcase-img" src="./img/saas.png" />
+                  <span class="caption-txt">Saas prototype</span>
+                </div>
+                <div class="item-slide">
+                  <img class="showcase-img" src="./img/BWB.png" />
+                  <span class="caption-txt">Landing page prototype</span>
+                </div>
+              </div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              <button
+                id="closeModal"
+                class="modal-close is-large"
+                aria-label="close"
+              ></button>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <div class="spacer"></div>
+
+    <!--
+      <section class="hero is-medium">
+        <div class="hero-body">
+          <div class="container">
+            <div class="columns is-vcentered">
+              <div class="column is-5 has-text-centered">
+                <figure class="image is-4by3">
+                  <img src="showcase/Dankemo_showcase.png" />
+                </figure>
+                <br />
+                <span>Growth through networking</span>
+              </div>
+              <div class="column is-offset-2">
+                <h4 class="title is-6 is-uppercase">Case Study: Webapp</h4>
+                <h4 class="title is-2">Growth through networking</h4>
+                <p class="justify">
+                  Dankemo is a platform that allows businesses and independent
+                  contractors to register and advertise their products and
+                  services...
+                </p>
+                <br />
+                <a href="#">Comming soon</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      Dankemo-->
+
+    <!----WEB DEV SHOWCASE----->
+
+    <!--LPS-->
+    <section id="webD" class="hero is-medium">
+      <div class="hero-body">
+        <div class="container">
+          <h4 class="subtitle is-3 is-uppercase">Web Development</h4>
+          <hr />
+
+          <div class="columns is-vcentered">
+            <div class="column is-5">
+              <h4 class="title is-6 is-uppercase">
+                Case Study: Ecommerce | Web App
+              </h4>
+              <h4 class="title is-2">
+                One click away from your ideal furniture
+              </h4>
+              <p class="justify">
+                Le Paysage was founded 50 years ago. They offer high quality
+                frames, and for the last 9 years they have been diversifying
+                into producing furniture...
+              </p>
+              <br />
+              <a href="lps.html">More info</a>
+            </div>
+            <div class="column is-offset-2 has-text-centered">
+              <figure class="image is-4by3">
+                <img src="showcase/Le Paysage_showcase.png" />
+              </figure>
+              <br />
+              <span>Le Paysage Interior Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--DRG-->
+    <section class="hero is-medium">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-vcentered">
+            <div class="column is-5 has-text-centered">
+              <figure class="image is-4by3">
+                <img src="showcase/DRG_showcase.png" />
+              </figure>
+              <br />
+              <span>Personal Brand</span>
+            </div>
+            <div class="column is-offset-2">
+              <h4 class="title is-6 is-uppercase">
+                Case Study: Website & Video Marketing
+              </h4>
+              <h4 class="title is-2">
+                Helping professionals become consultants
+              </h4>
+              <p class="justify">
+                David Ramírez Gutiérrez is an independent business consultant
+                with 30+ years of experience. Throughout the last few years he
+                has been a professor teaching at university level, as well as a
+                mentor for business owners and entrepreneurs...
+              </p>
+              <br />
+              <a href="drg.html">More info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--CT-->
+    <section class="hero is-medium">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-vcentered">
+            <div class="column is-5">
+              <h4 class="title is-6 is-uppercase">Case Study: Webapp</h4>
+              <h4 class="title is-2">
+                Enhancing tourist mobility in Quintana Roo
+              </h4>
+              <p class="justify">
+                For this project, the objective was to create a platform for a
+                Mexican shuttle services company based in Cancun...
+              </p>
+              <br />
+              <a href="ct.html">More info</a>
+            </div>
+            <div class="column is-offset-2 has-text-centered">
+              <figure class="image is-4by3">
+                <img src="showcase/CT_showcase.png" />
+              </figure>
+              <br />
+              <span>Booking Engine</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <div class="spacer"></div>
+
+          <div class="columns">
+            <div class="column">
+              <img src="./img/bwmx.png" alt="" />
+              <strong>BWMX</strong>
+              <br />
+              <a href="https://bodyweightfitness.mx">Visit site</a>
+            </div>
+            <div class="column">
+              <img src="./img/HOMX.png" alt="" />
+              <strong>Homeoffice.mx</strong>
+              <br />
+              <a href="https://home-office.mx">Visit site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="spacer"></div>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column is-5">
+            <h2 class="title is-4">Interested in building on the web?</h2>
+            <p>Feel free to get in touch with me</p>
+            <br />
+            <button id="modl" class="button">Let's talk!</button>
+          </div>
+        </div>
+        <hr />
+        <!----
+            <div class="columns is-vcentered">
+                <div class="column is-5">
+                    <p>Last edited Dec-2021</p>
+                </div>
+                <div class="column is-6 has-text-right">
+                    <h2 class="title is-4">Socials</h2>
+                    <p>Dribbble & IG</p>
+                </div>
+                <div class="column"></div>
+            </div>
+        -->
+      </div>
+    </footer>
+
+    <!--MODAL-->
+    <div id="modalContent" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Get in touch</p>
+          <button class="delete close-btn"></button>
+        </header>
+
+        <section class="modal-card-body">
+          <form
+            onsubmit="redirect()"
+            method="post"
+            action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSeQjr2DKOFJOiiKUXHlqOXEL3uAU4svYII630ny49NPc4rA3w/formResponse"
+            target="hidden_iframe"
+          >
+            <div class="field">
+              <label class="label">Name</label>
+              <div class="control">
+                <input
+                  id="fna"
+                  class="input"
+                  name="entry.1786396768"
+                  type="text"
+                  placeholder="Name"
+                />
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control has-icons-left has-icons-right">
+                <input
+                  id="fem"
+                  class="input"
+                  name="entry.976551282"
+                  type="text"
+                  placeholder="Email"
+                />
+                <p class="is-danger help" id="emailVerif"></p>
+                <span class="icon is-small is-left">
+                  <i class="fa fa-envelope"></i>
+                </span>
+              </div>
+              <p class="help is-danger"></p>
+            </div>
+
+            <div class="field">
+              <label class="label">Message</label>
+              <div class="control">
+                <textarea
+                  id="frmMsg"
+                  class="textarea"
+                  name="entry.1612525778"
+                  placeholder="Details"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="field is-grouped">
+              <div class="control">
+                <button
+                  onclick="valid()"
+                  id="formBtn"
+                  type="submit"
+                  class="button is-black"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/modal.js"></script>
+  </body>
+</html>
